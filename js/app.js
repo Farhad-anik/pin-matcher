@@ -33,7 +33,7 @@ function verifyPin() {
     const pin = document.getElementById('display-pin').value;
     const typeNumbers = document.getElementById('typed-numbers').value;
     const notifySuccess = document.getElementById('notify-success');
-    const nofityFail = document.getElementById('nofity-fail');
+    const nofityFail = document.getElementById('notify-fail');
     if (pin == typeNumbers) {
 
         notifySuccess.style.display = 'block';
@@ -41,7 +41,8 @@ function verifyPin() {
     }
     else {
 
-        notifySuccess.style.display = 'none';
         nofityFail.style.display = 'block';
+        notifySuccess.style.display = 'none';
+
     }
 }
